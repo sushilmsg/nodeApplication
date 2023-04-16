@@ -3,13 +3,13 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(express.json());
-require("../src/database/connection.js");
-const userRanking = require('../src/models/users');
-const router = require('../src/routes/routes');
-app.use(router);
+//require("../src/database/connection.js");
+// const userRanking = require('../src/models/users');
+// const router = require('../src/routes/routes');
+// app.use(router);
 
 app.get('/',(req, res)=>{
-    res.send("This is test callback function");
+    res.send("Hello world");
 });
 
 app.listen(port,() =>{
